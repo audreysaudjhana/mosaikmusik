@@ -1,3 +1,16 @@
+body  {
+  background-image: url("../asset/konser1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header h1{
+	padding-top: 32%;
+	padding-bottom: 10%;
+	font-size: 3.65rem;
+}
+
 h1{
 	display: inline-block;
 }

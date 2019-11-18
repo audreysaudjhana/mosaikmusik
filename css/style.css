@@ -186,9 +186,7 @@ main .content {
 /* misc */
 body {
 	overflow-x: hidden;
-	background: #444;
 	color: white;
-	font: 1em/1.4 "lato";
 }
 /* background color */
 main {
@@ -211,7 +209,7 @@ article {
 	}
 }
 h1, a {
-	font: 3em/1.4 "Righteous", cursive;
+	font: 2.5em/1.4 "Righteous", cursive;
 	font-weight: 700;
 }
 p{
