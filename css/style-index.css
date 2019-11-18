@@ -6,9 +6,9 @@ body  {
 }
 
 header h1{
-	padding-top: 32%;
-	padding-bottom: 10%;
-	font-size: 3.65rem;
+	padding-top: 20%;
+	padding-bottom: 20%;
+	font-size: 4.75rem;
 }
 
 h1{
@@ -49,4 +49,64 @@ h1{
 
 #judul-4{
 	background-image: linear-gradient(to left, transparent, transparent 50%, #8E2375 50%, #8E2375);
+}
+
+
+.note {
+    width:2%;
+    height:2%;
+    line-height:50px;
+    position:relative;
+    animation: combined 2s linear infinite;
+    -webkit-animation: combined 2s linear infinite;
+    left:0;top:0;
+}
+
+@keyframes combined {
+    16%, 48%, 78%  {
+        top: 290px;
+        animation-timing-function: ease-out;
+    }
+    32% {
+        top: 150px;
+        animation-timing-function: ease-in;
+    }
+    62% {
+        top: 200px;
+        animation-timing-function: ease-in;
+    }
+    90% {
+        top: 250px;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: rotate(360deg);
+        top: 290px;
+        animation-timing-function: ease-out;
+        left:100%;
+    }
+}
+@-webkit-keyframes combined {
+    16%, 48%, 78%  {
+        top: 290px;
+        -webkit-animation-timing-function: ease-out;
+    }
+    32% {
+        top: 150px;
+        -webkit-animation-timing-function: ease-in;
+    }
+    62% {
+        top: 200px;
+        -webkit-animation-timing-function: ease-in;
+    }
+    90% {
+        top: 250px;
+        -webkit-animation-timing-function: ease-in;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        top: 290px;
+        -webkit-animation-timing-function: ease-out;
+        left:100%;
+    }
 }
