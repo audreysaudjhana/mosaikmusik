@@ -8,7 +8,14 @@ h1{
 	background-position: 0 -100%; 
 }
 
-#judul-1, #judul-2, #judul-3, #judul-4{
+#judul-1, #judul-3, #judul-4{
+	background-size: 200% 100%;
+	background-position: 100% 0;
+    transition: all .25s ease-in;
+    transition: background-position 1s;
+}
+
+#judul-2{
 	background-size: 200% 100%;
 	background-position: 100% 0;
     transition: all .25s ease-in;
