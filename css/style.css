@@ -189,17 +189,27 @@ body {
 	color: white;
 }
 /* background color */
-main {
+#content-1 {
 	background: #333290;
 	padding: 5% 0;
 }
+
+#content-2 {
+	background: #522B86;
+	padding: 5% 0;
+}
+#content-3{
+	background: #8E2375;
+	padding: 5% 0;
+}
+
 article {
 	width: 90%;
 	margin: 0 auto;
 	font-size: 1.3em;
 }
 
-.carousel-indicators{
+.carousel-indicators {
 	z-index: 1;
 }
 
