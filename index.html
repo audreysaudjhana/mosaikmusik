@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asap|Righteous&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 	<title>Mosaik Musik</title>
 	<style>
   	/* Make the image fully responsive */
@@ -19,7 +18,7 @@
       	}
   	</style>
 </head>
-
+<script src="js/bootstrap.min.js"></script>
 <body>
 <input type="checkbox" id="navcheck" role="button" title="menu">
 <label for="navcheck" aria-hidden="true" title="menu">
@@ -39,10 +38,21 @@
 
 <main>
 	<article class="content">
-		<h1 id="judul-1">Musik</h1> &#160;
-		<h1 id="judul-2">Bagian</h1> <br/>
-		<h1 id="judul-3">Mosaik</h1> &#160;
-		<h1 id="judul-4">Kehidupan</h1>
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<h1 id="judul-1">Musik</h1>
+			</div>
+			<h1 id="judul-2">Bagian</h1>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<h1 id="judul-3">Mosaik</h1>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<h1 id="judul-4">Kehidupan</h1>
+			</div>
+		</div>
 		<p><strong>Music is my life! Musik adalah hidupku. Mari kita mengapresiasi musik dengan bereksplorasi bersama. Siapkan dirimu! Karena dalam musik, kita akan menghadapi petualangan yang menyenangkan!</strong></p>
 	</article>
 </main>
