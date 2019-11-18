@@ -138,6 +138,7 @@ main .content {
 	/* material acceleration */
 	will-change: transform, filter;
 	transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+	z-index: 9999;
 }
 [id="navcheck"]:checked + label::before {
 	opacity: 1;
@@ -199,6 +200,11 @@ article {
 	margin: 0 auto;
 	font-size: 1.3em;
 }
+
+.carousel-indicators{
+	z-index: 1;
+}
+
 @media (min-width: 60em) {
 	article {
 		width: 50%;
