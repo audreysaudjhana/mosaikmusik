@@ -5,6 +5,11 @@ body  {
   background-attachment: fixed;
 }
 
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+}
+
 header h1{
 	padding-top: 20%;
 	padding-bottom: 20%;
