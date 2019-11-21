@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style-index.css">
 	<link rel="stylesheet" href="fontawesome/css/all.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asap|Righteous&display=swap">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="shortcut icon" href="asset/logo-transparan.png">
@@ -34,14 +35,16 @@
 </nav>
 
 <header style="text-align: center;">
-	<div class="note"><img src="asset/note.png"></div>
+	<div class="note">
+		<img src="asset/note.png" width="500%" height="auto">
+	</div>
 	<h1>
 		Selamat Datang di Mosaik Musik
 	</h1>	
 </header>
 
 <main id="content-1">
-	<article class="content">
+	<article class="content" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos="fade-right">
 		<h1 id="judul-1">Musik</h1> &nbsp; 
 		<h1 id="judul-2">Bagian</h1><br/>
 		<h1 id="judul-3">Mosaik</h1> &nbsp; 
@@ -83,27 +86,61 @@
 
 <main id="content-2">
 	<article class="content">
-		<h1 id="judul-5">Musik</h1>
+		<div class="row">
+			<div class="col-4" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos="fade-right">
+				<img src="asset/time-sand.gif" width="150%" height="auto" style="border-radius: 50%; box-shadow: 2px 3px #3254a8;">
+			</div>
+			<div class="col-2">
+			</div>
+			<div class="col-6" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos="fade-left">
+				<h1 id="judul-5">Putar Balik Waktu</h1>
+				<p>Berpetualang dari masa ke masa, sorot balik perjalanan musik.</p>
+				<a href="./index.html" target="_blank" class="button1">Siap! >>></a>
+			</div>
+		</div>
 	</article>
 </main>
 <main id="content-3">
 	<article class="content">
-		<h1 id="judul-6">Musik</h1>
+		<div class="row">
+			<div class="col-6" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos="fade-right">
+				<h1 id="judul-6" style="float: right;">Menjalajahi Dunia</h1>
+				<p>Apakah mungkin menjelajahi dunia dengan musik? Dengarkan dan rasakan petualangannya.</p>
+				<a href="./index.html" target="_blank" class="button1">Ayo! >>></a>
+			</div>
+			<div class="col-6" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos="fade-left">
+				<img src="asset/globe.gif" width="100%" height="auto" style="border-radius: 50%; box-shadow: 2px 3px #888888;">
+			</div>
+		</div>
 	</article>
 </main>
 <main id="content-4">
 	<article class="content">
-		<h1 id="judul-7">Musik</h1>
+		<div class="row">
+			<div class="col-4" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos="fade-right">
+				<img src="asset/quiz.gif" width="150%" height="auto" style="border-radius: 50%; box-shadow: 2px 3px #e87c23;">
+			</div>
+			<div class="col-2">
+			</div>
+			<div class="col-6" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos="fade-left">
+				<h1 id="judul-7">Berani Ikut Tantangan</h1>
+				<p>Uji pengetahuan dan wawasanmu tentang musik. Merasa tertantang? Berani ikut tantangannya?</p>
+				<a href="./index.html" target="_blank" class="button1">Berani! >>></a>
+			</div>
+		</div>
 	</article>
 </main>
 
 <footer>
-	<main>
+	<main id="content-5">
 		<article class="content">
-			<h1 id="judul-8">Musik</h1>
+			<strong><p style="text-align: center;"><img src="asset/logo-transparan.png" width="4%" height="auto">osaik Musik &copy; copyrighted by Sublime Team</p></strong>
 		</article>
 	</main>
 </footer>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 		<script>
+    		AOS.init();
+ 		</script>
 </body>
 </html>

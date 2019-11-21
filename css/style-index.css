@@ -10,10 +10,88 @@ body  {
     width: 100%;
 }
 
-header h1{
+header h1 {
 	padding-top: 20%;
 	padding-bottom: 20%;
 	font-size: 4.75em;
+}
+
+@media only screen and (max-width: 600px) {
+    body  {
+        background-image: url("../asset/konser1.jpg");
+        background-size: 100%;
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+    }
+    .note {
+        width: 2%;
+        height: 2%;
+        line-height: 50px;
+        position: relative;
+        animation: combined 2s linear infinite;
+        -webkit-animation: combined 2s linear infinite;
+        left:0;
+        top:0;
+    }
+    @keyframes combined {
+        16%, 48%, 78%  {
+            top: 16%;
+            animation-timing-function: ease-out;
+        }
+        32% {
+            top: 32%;
+            animation-timing-function: ease-in;
+        }
+        62% {
+            top: 62%;
+            animation-timing-function: ease-in;
+        }
+        90% {
+            top: 90%;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            transform: rotate(360deg);
+            top: 100%;
+            animation-timing-function: ease-out;
+            left: 100%;
+        }
+    }
+    @-webkit-keyframes combined {
+        16%, 48%, 78%  {
+            top: 16%;
+            -webkit-animation-timing-function: ease-out;
+        }
+        32% {
+            top: 32%;
+            -webkit-animation-timing-function: ease-in;
+        }
+        62% {
+            top: 62%;
+            -webkit-animation-timing-function: ease-in;
+        }
+        90% {
+            top: 90%;
+            -webkit-animation-timing-function: ease-in;
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            top: 100%;
+            -webkit-animation-timing-function: ease-out;
+            left:100%;
+        }
+    }
+    #content-2, #content-3, #content-4, #content-5{
+        font-size: 50%;
+    }
+    header h1 {
+        padding-top: 5%;
+        padding-bottom: 15%;
+        font-size: 2.15em;
+    }
+    footer p{
+        font-size: 1.5em;
+    }
 }
 
 h1{
@@ -26,14 +104,7 @@ h1{
 	background-position: 0 -100%; 
 }
 
-#judul-1, #judul-3, #judul-4{
-	background-size: 200% 100%;
-	background-position: 100% 0;
-    transition: all .25s ease-in;
-    transition: background-position 1s;
-}
-
-#judul-2{
+#judul-1, #judul-2, #judul-3, #judul-4{
 	background-size: 200% 100%;
 	background-position: 100% 0;
     transition: all .25s ease-in;
@@ -114,4 +185,34 @@ h1{
         -webkit-animation-timing-function: ease-out;
         left:100%;
     }
+}
+
+a.button1{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    font-size: 1em;
+    text-decoration:none;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+a.button1:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+footer{
+    padding-top: 3%;
+    padding-bottom: 1%;
+    background-image: url("../asset/konser2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    font-size: 1.05em;
 }
