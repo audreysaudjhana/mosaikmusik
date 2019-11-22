@@ -227,7 +227,7 @@ body {
 }
 
 article {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	font-size: 1.3em;
 }
@@ -238,7 +238,7 @@ article {
 
 @media (min-width: 60em) {
 	article {
-		width: 50%;
+		width: 40%;
 	}
 }
 h1, a {
