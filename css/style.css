@@ -221,13 +221,13 @@ body {
 	padding: 5% 0;
 }
 
-#history-4{
+#content-4{
 	background: #E62044;
 	padding: 5% 0;
 }
 
 article {
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 	font-size: 1.3em;
 }
@@ -238,7 +238,7 @@ article {
 
 @media (min-width: 60em) {
 	article {
-		width: 70%;
+		width: 50%;
 	}
 }
 h1, a {
