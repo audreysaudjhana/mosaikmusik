@@ -213,15 +213,22 @@ body {
 }
 
 #history-2 {
+	background: #000000;
+	padding: 5% 5%;
+	font-size: 115%
+}
+
+#history-3 {
 	background: #522B86;
 	padding: 5% 0;
 }
-#history-3{
+
+#history-4 {
 	background: #8E2375;
 	padding: 5% 0;
 }
 
-#history-4{
+#history-5 {
 	background: #E62044;
 	padding: 5% 0;
 }
