@@ -218,19 +218,47 @@ body {
 	font-size: 115%
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#history-3-content, #history-4-content,  #history-5-content, #history-6-content, #history-7-content, #history-8-content{
+	box-shadow: 2px 3px #888888; 
+	border-radius: 5%;
+} 
+
+#history-3, #history-4, #history-5, #history-6, #history-7, #history-8 { 
+	background-image: url("../asset/medieval.jpg");
+	padding: 5% 5%;
+	font-size: 115%;
+}
+
+#history-3-content {
+	background-color: rgba(82,43,134, .8);
+}
+
 #history-3 {
-	background: #522B86;
-	padding: 5% 0;
+	background-image: url("../asset/medieval.jpg");
+}
+
+#history-4-content {
+	background-color: rgba(142,35,117, .8);
 }
 
 #history-4 {
-	background: #8E2375;
-	padding: 5% 0;
+	background-image: url("../asset/renaissance.jpg");
+}
+
+#history-5-content {
+	background-color: rgba(230,32,68, .8);
 }
 
 #history-5 {
-	background: #E62044;
-	padding: 5% 0;
+	background-image: url("../asset/baroque.jpg");
+	background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 article {
