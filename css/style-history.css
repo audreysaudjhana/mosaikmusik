@@ -1,8 +1,8 @@
-body  {
-  background-image: url("../asset/africafest.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+header  {
+	background-image: url("../asset/africafest.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 footer{
@@ -10,4 +10,12 @@ footer{
     padding-bottom: 1%;
     font-size: 1.05em;
     background-color: #333290
+}
+
+@media only screen and (max-width: 800px) {
+	header  {
+  		background-image: url("../asset/africafest.jpg");
+  		background-repeat: repeat-y;
+ 		background-attachment: relative;
+	}
 }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style-genre.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="shortcut icon" href="asset/logo-transparan.png">
+	<title>Mosaik Musik</title>
+</head>
+
+<script src="js/bootstrap.min.js"></script>
+<body>
+
+
+<div class="swiper-container swiper-default">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/slide-1.jpg" alt="Dummy Image">
+              <div class="slide-inner">
+                <div class="slide-title" data-slide="animated" data-animate="slideInUp">Iure corporis id laborum ipsam.</div>
+                <div class="slide-captions" data-slide="animated" data-animate="flipInX">Delectus ipsa vel magni totam, ipsam nihil perferendis nisi quisquam eos fugit, earum facere dolor placeat qui molestias. Dolores ratione voluptates tenetur!</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide-2.jpeg" alt="Dummy Image">
+              <div class="slide-inner">
+                <div class="slide-title" data-slide="animated" data-animate="zoomIn">Adipisci quia officiis magnam.</div>
+                <div class="slide-captions" data-slide="animated" data-animate="slideInUp">Impedit, dolores vitae in iste numquam, id eligendi obcaecati assumenda, doloremque omnis atque explicabo sapiente fuga recusandae distinctio laboriosam quidem vel rerum.</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide-3.jpeg" alt="Dummy Image">
+              <div class="slide-inner">
+                <div class="slide-title" data-slide="animated" data-animate="bounceInDown">Minima accusamus inventore ea.</div>
+                <div class="slide-captions" data-slide="animated" data-animate="fadeInUp">Similique laboriosam cumque, vero unde quisquam blanditiis dignissimos incidunt, odit assumenda ex dolore quae repellat officia officiis consequuntur sit quos id ea.</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slide-4.jpg" alt="Dummy Image">
+              <div class="slide-inner">
+                <div class="slide-title" data-slide="animated" data-animate="zoomIn">Iste dolorem, cupiditate.</div>
+                <div class="slide-captions" data-slide="animated" data-animate="flipInY">Voluptas consectetur nemo fugit officia culpa maiores molestias natus ratione ad, enim, dolorum aliquam explicabo. Nesciunt dolores consectetur, numquam consequuntur distinctio enim.</div>
+              </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+<footer>
+	<main id="content-5">
+		<article class="content">
+			<strong><p style="text-align: center;"><img src="asset/logo-transparan.png" width="4%" height="auto">osaik Musik &copy; copyrighted by Sublime Team</p></strong>
+		</article>
+	</main>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 		<script>
+    		AOS.init();
+ 		</script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+</script>
+<script src="js/swiper.min.js"></script>
+</body>
+</html>

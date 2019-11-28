@@ -188,6 +188,11 @@ body {
 	overflow-x: hidden;
 	color: white;
 }
+
+.row {
+	display: flex;
+}
+
 /* background color */
 #content-1 {
 	background: #333290;
@@ -218,47 +223,69 @@ body {
 	font-size: 115%
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 #history-3-content, #history-4-content,  #history-5-content, #history-6-content, #history-7-content, #history-8-content{
 	box-shadow: 2px 3px #888888; 
-	border-radius: 5%;
 } 
 
 #history-3, #history-4, #history-5, #history-6, #history-7, #history-8 { 
-	background-image: url("../asset/medieval.jpg");
 	padding: 5% 5%;
 	font-size: 115%;
 }
 
 #history-3-content {
-	background-color: rgba(82,43,134, .8);
+	background-color: black;
 }
 
 #history-3 {
 	background-image: url("../asset/medieval.jpg");
+	background: linear-gradient(black, rgba(82,43,134, .8));
 }
 
 #history-4-content {
-	background-color: rgba(142,35,117, .8);
+	background-color: black;
 }
 
 #history-4 {
 	background-image: url("../asset/renaissance.jpg");
+	background: linear-gradient(rgba(82,43,134, .8), rgba(142,35,117, .8));
 }
 
 #history-5-content {
-	background-color: rgba(230,32,68, .8);
+	background-color: black;
 }
 
 #history-5 {
 	background-image: url("../asset/baroque.jpg");
-	background-size: 100%;
-  background-repeat: no-repeat;
+  	background-repeat: no-repeat;
+  	background: linear-gradient(rgba(142,35,117, .8), rgba(142,35,117, .8));
+}
+
+#history-6-content {
+	background-color: black;
+}
+
+#history-6 {
+	background-image: url("../asset/medieval.jpg");
+	background: linear-gradient(rgba(142,35,117, .8), rgba(142,35,117, .8));
+}
+
+#history-7-content {
+	background-color: black;
+}
+
+#history-7 {
+	background-image: url("../asset/renaissance.jpg");
+	background: linear-gradient(rgba(142,35,117, .8), rgba(82,43,134, .8));
+}
+
+#history-8-content {
+	background-color: black;
+}
+
+#history-8 {
+	background-image: url("../asset/baroque.jpg");
+  	background-repeat: no-repeat;
+  	background: linear-gradient(rgba(82,43,134, .8), rgba(51,50,144, 1));
 }
 
 article {

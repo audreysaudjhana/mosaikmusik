@@ -2,11 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/style-history.css">
+	<link rel="stylesheet" type="text/css" href="css/style-genre.css">
 	<link rel="stylesheet" href="fontawesome/css/all.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asap|Righteous&display=swap">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -34,6 +35,26 @@
 	<a href="./contact.html"><i class="fas fa-phone-alt"></i> Contact</a>
 </nav>
 
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+    	<div class="swiper-slide"></div>
+    	<div class="swiper-slide"></div>
+    	<div class="swiper-slide"></div>
+    	<div class="swiper-slide"></div>
+    	<div class="swiper-slide"></div>
+    	<!--<div class="swiper-slide">
+    		<div class="imgBx">
+    			<img src="asset/classical-music.jpg">
+    		</div>
+    		<div class="details">
+    			<h3>Musik Klasik<br><span>Musik klasik biasanya merujuk pada musik klasik Eropa, tetapi kadang-kadang juga pada musik klasik Persia, India, dsb. Dahulu musik klasik di Eropa terutama digunakan untuk kebutuhan lagu di Gereja ataupun lagu untuk pengiringan Raja. Searah dengan pergantian zaman, musik klasik mulai digunakan untuk kebutuhan lain, seperti musik untuk menggambarkan visual lewat cara audio, seperti lagu Cat and Mouse yang menggambarkan kucing mengejar tikus.</span></h3>
+    		</div>
+    	</div>-->
+    </div>
+
+    <div class="swiper-pagination"></div>
+</div>
 <footer>
 	<main id="content-5">
 		<article class="content">
@@ -45,5 +66,25 @@
  		<script>
     		AOS.init();
  		</script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+</script>
+<script src="js/swiper.min.js"></script>
 </body>
 </html>
