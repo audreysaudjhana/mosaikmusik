@@ -1,19 +1,30 @@
 body{
-	background-color: #000000;
+	background-color: rgba(0, 0, 0, .8);
 	margin: 0;
 	padding: 0;
 }
 
-.swiper-container {
+.genre-content{
+    background-color: #FFFFFF;
+    margin-top: 2%;
+    padding: 5%;
+}
+
+#genre-content{
+    margin-top: 2%;
+    color: black;
+}
+
+.swiper-container{
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.swiper-slide {
+.swiper-slide{
     background-position: center;
     background-size: cover;
     width: 300px;
-    height: 300px;
+    height: 400px;
     background-color: #FFF;
 }
 
@@ -23,4 +34,25 @@ footer{
     font-size: 1.05em;
     background-color: #333290
     bottom: 0;
+}
+
+h3{
+    font: 2em/1.4 "Righteous", cursive;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+a.button1{
+    border: 0.1em solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #333290;
+    border-radius: 0.5em;
+    float: right;
+    margin: auto 0.3em; 
+}
+
+a.button1:hover{
+    color: #FFFFFF;
+    background-color: #E62044;
 }
