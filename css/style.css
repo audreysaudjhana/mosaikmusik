@@ -1,4 +1,4 @@
-input {
+input#navcheck{
 	position: fixed;
 	opacity: 0;
 }

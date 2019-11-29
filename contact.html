@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -10,14 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="contact-form-handler.php">
 	<link rel="stylesheet" href="fontawesome/css/all.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asap|Righteous&display=swap">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="shortcut icon" href="asset/logo-transparan.png">
 	<title>Mosaik Musik</title>
 </head>
 
-<script src="js/bootstrap.min.js"></script>
 <body>
 <input type="checkbox" id="navcheck" role="button" title="menu">
 <label for="navcheck" aria-hidden="true" title="menu">
@@ -34,23 +30,55 @@
 	<a href="./quiz.html"><i class="fas fa-question-circle"></i> Quiz</a>
 	<a href="./contact.html"><i class="fas fa-phone-alt"></i> Contact</a>
 </nav>
-	
-<div class="contact-title">
-	<h1>Contact Us</h1>
-	<h2>We are from Sublime Groups ready serve you!</h2>
-</div>
 
-<div class="contact-form">
-	<form id="contact-form" method="post" action="contact-form-handler.php">
-	<input name="name" type="text" class="form-control" placeholder="Your Name" recuired>
-	<br>
-	<input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Say Hello!
+				</span>
 
-		<textarea name="message" class="form-control" placeholder="message" row="4" required></textarea><br>
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Your Name</span>
+					<input class="input100" type="text" name="name" placeholder="Enter your name">
+					<span class="focus-input100"></span>
+				</div>
 
-		<input type="submit" class="form-control submit" value="SEND MESSAGE">
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: audreysaudjhana16@gmail.com">
+					<span class="label-input100">Email</span>
+					<input class="input100" type="text" name="email" placeholder="Enter your email addess">
+					<span class="focus-input100"></span>
+				</div>
 
-	</form>
-</div>
+				
+
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<span class="label-input100">Message</span>
+					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							<span>
+								Submit
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
 </body>
 </html>
