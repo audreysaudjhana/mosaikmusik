@@ -4,7 +4,7 @@
 	$message = $_POST['message'];
 
 
-	$email_from = 'tanjevin12@gmail.com';
+	$email_from = 'mosaikmusik';
 
 	$email_subject = "New Form Submission";
 
@@ -13,14 +13,15 @@
 						"User Message: $message.\n";
 
 
-	$to = "iyan12praswoko@gmail.com";
+	$to = "audreysaudjhana16@gmail.com";
 
 	$headers = "From: $email_from \r\n";
 
 	$headers .= "Reply-To: $visitor_email \r\n";
 
-	mail($to,$email_subject,$email_body,$headers);
-
-	header("Location: contact.html");
-
+	if(mail($to,$email_subject,$email_body,$headers)){
+		echo "<script>alert('Pesan anda berhasil dikirim. Terima kasih telah menghubungi kami.');history.go(-1);</script>";
+	}else{
+		echo "<script>alert('Pesan anda gagal dikirim, silakan mencoba lagi.');history.go(-1);</script>";
+	}
 ?>
