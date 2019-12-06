@@ -21,7 +21,7 @@ header h1 {
         background-image: url("../asset/konser1.jpg");
         background-size: 100%;
         background-repeat: repeat-y;
-        background-attachment: fixed;
+        background-attachment: sticky;
     }
     .note {
         width: 2%;
@@ -35,50 +35,50 @@ header h1 {
     }
     @keyframes combined {
         16%, 48%, 78%  {
-            top: 16%;
+            top: 90px;
             animation-timing-function: ease-out;
         }
         32% {
-            top: 32%;
+            top: 40px;
             animation-timing-function: ease-in;
         }
         62% {
-            top: 62%;
+            top: 75px;
             animation-timing-function: ease-in;
         }
         90% {
-            top: 90%;
+            top: 20px;
             animation-timing-function: ease-in;
         }
         100% {
             transform: rotate(360deg);
-            top: 100%;
+            top: 75px;
             animation-timing-function: ease-out;
-            left: 100%;
+            left: 60px;
         }
     }
     @-webkit-keyframes combined {
         16%, 48%, 78%  {
-            top: 16%;
-            -webkit-animation-timing-function: ease-out;
+            top: 90px;
+            animation-timing-function: ease-out;
         }
         32% {
-            top: 32%;
-            -webkit-animation-timing-function: ease-in;
+            top: 40px;
+            animation-timing-function: ease-in;
         }
         62% {
-            top: 62%;
-            -webkit-animation-timing-function: ease-in;
+            top: 75px;
+            animation-timing-function: ease-in;
         }
         90% {
-            top: 90%;
-            -webkit-animation-timing-function: ease-in;
+            top: 20px;
+            animation-timing-function: ease-in;
         }
         100% {
-            -webkit-transform: rotate(360deg);
-            top: 100%;
-            -webkit-animation-timing-function: ease-out;
-            left:100%;
+            transform: rotate(360deg);
+            top: 75px;
+            animation-timing-function: ease-out;
+            left: 60px;
         }
     }
     #content-2, #content-3, #content-4, #content-5{
